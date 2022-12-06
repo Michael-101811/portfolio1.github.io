@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Navbar</title> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+
+    
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <header>
+    
+        <div class="image"></div>
+    <div class="navbar">  
+        <div class="bx bx-menu"id="menu-icon"></div>  
+        <ul>
+            <li class="active"><a href="#name">Home</a></li>
+           <li><a href="#Aboutme">Aboutme</a></li>
+            <li><a href="#Blogs">Blogs</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        </div>
+    </div>
+        
+        <!----Home section-->
+        
+        <sections id="name">
+            <div class="Home">
+            <div class="content">
+            <h1>WELCOME TO MY PORTFOLIO</h1>
+            <p> My name is Michael<br>Im a college student<br>
+            Who wants to become a Software developer</p>
+           </div>
+           <div class="Home-img">
+                <img src="file:///C:/Users/MICHAEL/Desktop/IMG_20220731_114342.JPG">
+                </div>
+            </div>
+            
+        <!--About Me Section---->
+            <sections id="Aboutme">
+                <div class="name2">
+                    
+                    <h1 class="title">WELCOME TO THIS SECTION</h1>
+                            
+         
+                    
+                    <div class="col-left">
+                
+                        <img src="file:///C:/Users/MICHAEL/Desktop/IMG_20220904_083153.JPG">
+                       
+                    </div>
+        
+                    <div class="col-right">
+            
+                        <p>Hi I'm Michael
+                   <br> I'm a College student who is Pursuing BCA Degree<br>And I'm a Final Year Student
+                        <br>My Resume is given below Please check out that</p>
+                  </div>        
+     <button type="submit1" ><a href="file:///C:/Users/MICHAEL/Desktop/College%20Folder/ENGLISH%20FOLDER/Resume1.pdf"Download class="btn-btn2">Download CV</a> 
+    </button>  
+                    </div>
+                
+                
+        </sections>
+
+        <!--Blogs section-->
+        <div class="name3">
+        <sections id="Blogs">
+                <h1>My Blogs</h1>
+                <p>MY RECENT BLOGS ARE AS FOLLOWS</p>
+            </div>
+            <div class="blog-container">
+                
+            <div class="blog1">
+                
+                <div class="blog-img">
+         <img src="file:///C:/Users/MICHAEL/Desktop/IMG_20220707_222645.JPG"alt="Blogs">
+         </div> 
+
+         <div class="blog-text">
+            <span> BLOGS:</span>
+            <a href="#" class="blog-title">I Like to Develope Simple Websites,<br>Do Gaming...</a>
+            <a href="#">READ MORE</a>
+        </div>         
+        </div>
+        </div>
+        
+    </sections>
+            <div clas="name4">
+                <sections class="Contact" id="Contact">
+                    <h1>CONTACT US</h1>
+                <form action="#"method="post"onsubmit="return check();"role="form"class="php-email-form">
+                    
+                    <div class="field">
+                    <input type="text"class="input-field"name="Name" id="name"placeholder="Name"required="">
+                    </div>
+                    <div class="field">
+                    <input type="email"class="input-field" email="email" id="email" placeholder="Email" required="">
+                    </div>
+                    <div class="field">
+                    <input type="text"class="input-field" subject="subject" id="subject"placeholder="Subject" required="">
+                    </div>
+                    <div class="field">
+                    <textarea type="text"class="input-field textarea-field" subject="message" id="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="button">
+                     <button type="submit" onclick="send(email)">send email</button>
+                    </div>
+                </div>
+
+</form>
+     </sections>
+     <footer> 
+            
+
+            <div class="copyright">
+                <p>Subject Related To Copyright @.....</p>
+            </div>
+          
+            </footer> 
+         </header>         
+                
+                
+<script src="Script.js">
+
+let navbar=document.querySelectorAll('ul>li');
+let sections=document.querySelectorAll('section');
+window.onscroll=()=>{
+    let scrollHeight=window.pageYOffset;
+    for(let i=0;i<sections.length;i++){
+        if(sections[i].offsetTop/1.1<=scrollHeight){
+            for(let j=0;j<navItems.length;j++){
+                navbar[j].classList.remove('active');
+
+            }
+            navbar[i].classList.add('active');
+        }
+    }
+}
+</script>
+
+
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+</body>
+</html>
